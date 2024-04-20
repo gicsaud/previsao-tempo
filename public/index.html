@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Previsão do tempo</title>
+</head>
+<body background="./images/background.jpeg">
+    <div class="center">
+        <div class="article-card">
+          <div class="sun-container">
+          <img src="./images/sol.png" class="sun-img" width="200px" height="200px">
+          </div>
+          
+          <div class="content">
+            <p class="date" id="date"></p>
+            <input type="text" class="input-city" id="input-city" placeholder="Pesquise sua cidade!">
+            <button onclick="buscarTemperatura(document.getElementById('input-city').value)" class="btn-search" > Buscar </button>
+          </div>
+        </div>
+      </div>
+
+      <script src="./js/scripts.js"></script>
+</body>
+</html>
