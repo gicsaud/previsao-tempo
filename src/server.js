@@ -4,6 +4,13 @@ const path = require('path');
 const fetch = require('node-fetch'); 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const cors = require('cors');
+
+
+app.use(cors({
+  origin: 'https://previsao-tempo-3c17kayce-giovanna-sauds-projects.vercel.app'
+}));
+
 
 app.use(express.json()); 
 app.use(express.static('public'));
